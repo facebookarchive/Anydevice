@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Anydevice</string>
+
+    <string name="logout">Logout</string>
+
+    <string name="hint_device_name">Device Name</string>
+    <string name="required_device_name">Device name is required.</string>
+    <string name="hint_device_type">Device Type</string>
+    <string name="add_device">Add Device</string>
+    <string name="empty_registered_device_list">No devices added yet.</string>
+    <string name="empty_registered_device_list_secondary">Tap the %s button to get started.</string>
+    <string name="empty_unregistered_device_list">No devices were found.</string>
+    <string name="empty_unregistered_device_list_secondary">Press the %s button to try again.</string>
+    <string name="set_up_device">Set Up Device</string>
+    <string name="progress_setup_title">Setting up the device</string>
+    <string name="progress_setup_message">Registering the device with the cloud and setting up the connection to the network.</string>
+    <string name="hint_network_ssid">Network SSID</string>
+    <string name="required_network_ssid">Network SSID is required.</string>
+    <string name="hint_network_password">Password</string>
+    <string name="required_network_password">Network password is required.</string>
+    <string name="delete_device_message">Deleting the current device</string>
+    <string name="delete_user_session_message">Deleting user session associated with current device</string>
+    <string name="save_infra_key">Save Password</string>
+    <string name="hint_iot_device">IoT Device</string>
+    <string name="hint_last_seen_unknown">Seen: N/A</string>
+    <string name="last_seen">Seen: %s</string>
+    <string name="error_device_inactive_for_time">Device has been inactive for more than 3 days.</string>
+    <string name="error_device_no_events">Device did not provision successfully.</string>
+    <string name="device_title_format">%1$s-%2$s</string>
+    <string name="default_device_board_type">device</string>
+    <string name="network_security">Security</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="refresh">Refresh</string>
+    <string name="remove_device">Remove Device</string>
+    <string name="remove_device_message">Are you sure you would like to remove this device?</string>
+    <string name="remove">Remove</string>
+    <string name="searching_for_devices">Searching for devices</string>
+    <string name="one_moment_please">One moment please</string>
+    <string name="logout_message">Are you sure you would like to logout?</string>
+
+    <string-array name="network_security_array">
+        <item>None</item>
+        <item>WPA/WPA2 Personal</item>
+        <item>WEP</item>
+    </string-array>
+
+</resources>

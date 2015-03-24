@@ -1,0 +1,3 @@
+[submodule "parse-embedded-sdks"]
+	path = parse-embedded-sdks
+	url = git@github.com:ParsePlatform/parse-embedded-sdks.git

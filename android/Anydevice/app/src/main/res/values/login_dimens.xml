@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="com_parse_ui_horizontal_margin">16dp</dimen>
+    <dimen name="com_parse_ui_small_vertical_spacing">12dp</dimen>
+</resources>

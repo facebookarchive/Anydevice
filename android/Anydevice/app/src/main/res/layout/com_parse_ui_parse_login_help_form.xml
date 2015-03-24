@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:paddingLeft="@dimen/com_parse_ui_horizontal_margin"
+              android:paddingRight="@dimen/com_parse_ui_horizontal_margin"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/login_help_instructions"
+        style="@style/ParseLoginUI.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/com_parse_ui_login_help_instructions"/>
+
+    <EditText
+        android:id="@+id/login_help_email_input"
+        style="@style/ParseLoginUI.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/com_parse_ui_login_help_email_input_hint"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/login_help_submit"
+        style="@style/ParseLoginUI.Button"
+        android:layout_marginTop="27dp"
+        android:text="@string/com_parse_ui_login_help_submit_button_label"/>
+</LinearLayout>

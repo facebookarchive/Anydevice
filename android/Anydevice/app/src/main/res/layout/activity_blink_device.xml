@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/details_header"
+        style="@style/Details.Header.Impl">
+
+        <com.parse.ParseImageView
+            android:id="@+id/device_img"
+            style="@style/Details.Image.Impl"/>
+
+        <RelativeLayout
+            style="@style/Details.TextWrapper.Impl"
+            android:layout_alignBottom="@id/device_img"
+            android:layout_alignTop="@id/device_img"
+            android:layout_toRightOf="@id/device_img">
+
+            <TextView
+                android:id="@+id/device_name"
+                style="@style/Details.Name.Impl"/>
+
+            <TextView
+                android:id="@+id/device_type"
+                style="@style/Details.Type.Impl"
+                android:layout_below="@id/device_name"/>
+
+            <TextView
+                android:id="@+id/device_last_seen"
+                style="@style/Details.LastSeen.Impl"
+                android:layout_below="@id/device_type"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/led_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_header"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle|end">
+
+        <RadioButton
+            android:id="@+id/led_on"
+            style="@style/Details.RadioButton.LedOn.Impl"/>
+
+        <RadioButton
+            android:id="@+id/led_off"
+            style="@style/Details.RadioButton.LedOff.Impl"/>
+
+        <RadioButton
+            android:id="@+id/blink_led"
+            style="@style/Details.RadioButton.BlinkLed.Impl"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/error"
+        style="@style/Details.Error.LastSeen.Impl"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar.Impl"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

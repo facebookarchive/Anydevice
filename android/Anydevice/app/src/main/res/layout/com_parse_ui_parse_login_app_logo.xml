@@ -1,0 +1,9 @@
+<ImageView
+    android:id="@+id/app_logo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:contentDescription="@string/com_parse_ui_logo_content_description"
+    android:src="@drawable/com_parse_ui_app_logo"
+    android:tint="@color/action_bar"/>

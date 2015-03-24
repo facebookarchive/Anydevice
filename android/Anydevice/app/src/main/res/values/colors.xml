@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="off_white">#f9f9f9</color>
+    <color name="light_grey">#b4bcc3</color>
+    <color name="dark_grey">#6c808f</color>
+
+    <color name="login_background">#303030</color>
+    <color name="login_primary_dark">#282828</color>
+    <color name="login_navigation_bar">@color/login_primary_dark</color>
+    <color name="login_text">@color/dark_grey</color>
+
+    <color name="login_control_normal">@color/com_parse_ui_parse_login_help_button_label</color>
+    <color name="login_control_highlight">@color/login_control_normal</color>
+    <color name="login_control_activated">#4e95ff</color>
+
+    <color name="app_primary">#596b78</color>
+    <color name="app_primary_dark">#33434d</color>
+    <color name="app_accent">#4e95ff</color>
+
+    <color name="window_background">@color/off_white</color>
+    <color name="status_bar">@color/app_primary_dark</color>
+    <color name="action_bar">@color/app_primary</color>
+
+    <color name="device_background">@color/white</color>
+    <color name="device_name">@color/app_primary_dark</color>
+    <color name="device_type">@color/dark_grey</color>
+
+    <color name="empty_device_list">@color/light_grey</color>
+
+    <color name="device_details_name">@color/white</color>
+    <color name="device_details_type">@color/light_grey</color>
+    <color name="device_details_type_background">#667682</color>
+    <color name="device_details_last_seen">@color/light_grey</color>
+    <color name="device_details_error_background">#e1e3e5</color>
+    <color name="device_details_error_text">@color/dark_grey</color>
+
+    <color name="flat_button_enabled">#FF4E95FF</color>
+    <color name="flat_button_disabled">#474E95FF</color>
+</resources>

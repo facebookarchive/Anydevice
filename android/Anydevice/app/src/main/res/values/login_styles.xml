@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ParseLoginUI"/>
+
+    <style name="ParseLoginUI.Button"
+           parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">
+            @drawable/com_parse_ui_parse_login_button_background_selector
+        </item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ParseLoginUI.Button.ThirdPartyLogin"
+           parent="ParseLoginUI.Button">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="ParseLoginUI.HelpButton"
+           parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/login_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ParseLoginUI.TextView"
+           parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/login_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ParseLoginUI.EditText"
+           parent="@android:style/Widget.EditText">
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

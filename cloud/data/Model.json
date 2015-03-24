@@ -1,0 +1,15 @@
+{ "results": [
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            }
+        },
+        "appName": "fbdr000001a",
+        "boardType": "TI CC3200",
+        "createdAt": "2015-02-05T14:48:25.190Z",
+        "default": true,
+        "objectId": "CyT9BvpYmV",
+        "updatedAt": "2015-02-05T18:39:51.134Z",
+    }
+] }

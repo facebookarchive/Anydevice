@@ -1,0 +1,19 @@
+<com.parse.anydevice.views.NewDeviceItemView
+    style="@style/Device.Container.Unregistered.Impl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.UnregisteredDevicesActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Device.Name.Unregistered.Impl"/>
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/Device.Type.Impl"
+        android:layout_below="@id/title"/>
+
+    <ImageButton
+        android:id="@+id/add_device"
+        style="@style/Device.Add.Impl"/>
+</com.parse.anydevice.views.NewDeviceItemView>

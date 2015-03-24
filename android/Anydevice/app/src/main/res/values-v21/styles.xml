@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Device.Container.Impl">
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="DeviceList.Empty.ProgressBar.Impl">
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="FabButton.Impl">
+        <item name="android:elevation">@dimen/fab_elevation</item>
+    </style>
+</resources>

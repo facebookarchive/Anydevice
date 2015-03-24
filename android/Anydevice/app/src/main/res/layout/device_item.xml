@@ -1,0 +1,30 @@
+<com.parse.anydevice.views.RegisteredDeviceItemView
+    style="@style/Device.Container.Impl"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.parse.ParseImageView
+        android:id="@+id/item_device_image"
+        style="@style/Device.Image.Impl"/>
+
+    <RelativeLayout
+        style="@style/Device.TextWrapper.Impl"
+        android:layout_alignBottom="@id/item_device_image"
+        android:layout_alignTop="@id/item_device_image"
+        android:layout_toRightOf="@id/item_device_image">
+
+        <TextView
+            android:id="@+id/item_device_name"
+            style="@style/Device.Name.Impl"/>
+
+        <TextView
+            android:id="@+id/item_device_type"
+            style="@style/Device.Type.Impl"
+            android:layout_below="@id/item_device_name"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/error"
+        style="@style/Device.Error.Impl"/>
+
+</com.parse.anydevice.views.RegisteredDeviceItemView>

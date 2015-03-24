@@ -1,0 +1,25 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisteredDevicesActivity">
+
+    <com.parse.anydevice.views.EmptyStateRecyclerView
+        android:id="@+id/list"
+        style="@style/DeviceList.Recycler.Impl"/>
+
+    <com.parse.anydevice.views.RegisteredDeviceListEmptyStateView
+        android:id="@+id/empty_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageButton
+        android:id="@+id/device_add"
+        style="@style/FabButton.Impl"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar.Impl"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/com_parse_ui_parse_login_button_push" android:state_pressed="true"/>
+    <item android:drawable="@color/com_parse_ui_parse_login_button_focus" android:state_focused="true"/>
+    <item android:drawable="@color/com_parse_ui_parse_login_button"/>
+
+</selector>

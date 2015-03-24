@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="com_parse_ui_parse_login_button">#FF596B78</color>
+    <color name="com_parse_ui_parse_login_button_push">#CC596B78</color>
+    <color name="com_parse_ui_parse_login_button_focus">#E5596B78</color>
+    <color name="com_parse_ui_parse_login_help_button_label">#4DFFFFFF</color>
+    <color name="com_parse_ui_parse_login_help_button_label_push">#AAAAAA</color>
+    <color name="com_parse_ui_parse_login_help_button_label_focus">#CCCCCC</color>
+    <color name="com_parse_ui_parse_login_display_text">@android:color/white</color>
+</resources>

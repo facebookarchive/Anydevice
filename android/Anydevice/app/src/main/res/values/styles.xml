@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Application theme-->
+    <style name="Theme.App" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="colorPrimary">@color/action_bar</item>
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="colorAccent">@color/app_accent</item>
+    </style>
+
+    <style name="Theme.App.Impl"></style>
+
+    <!--Application theme for pages with toolbar-->
+    <style name="Theme.App.NoActionBar" parent="Theme.App.Impl">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.App.NoActionBar.Impl"></style>
+
+    <!--Device list item view-->
+    <style name="Device"></style>
+
+    <!--Device container-->
+    <style name="Device.Container">
+        <item name="android:background">@drawable/item_registered_device_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+    </style>
+
+    <style name="Device.Container.Impl"></style>
+
+    <!--Unregistered device container-->
+    <style name="Device.Container.Unregistered" parent="Device.Container.Impl">
+        <item name="android:background">@drawable/shadow</item>
+    </style>
+
+    <style name="Device.Container.Unregistered.Impl"></style>
+
+    <!--Device image-->
+    <style name="Device.Image">
+        <item name="android:layout_width">@dimen/device_list_image_size</item>
+        <item name="android:layout_height">@dimen/device_list_image_size</item>
+    </style>
+
+    <style name="Device.Image.Impl"></style>
+
+    <!--Device error indicator-->
+    <style name="Device.Error">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:src">@drawable/error</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Device.Error.Impl"></style>
+
+    <!--Device add button-->
+    <style name="Device.Add">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/add_ripple</item>
+        <item name="android:clickable">false</item>
+        <item name="android:contentDescription">@string/add_device</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:src">@drawable/add_device</item>
+    </style>
+
+    <style name="Device.Add.Impl"></style>
+
+    <!--Device text wrapper-->
+    <style name="Device.TextWrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Device.TextWrapper.Impl"></style>
+
+    <!--Device name-->
+    <style name="Device.Name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/device_name</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:text">@string/hint_device_name</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Device.Name.Impl"></style>
+
+    <!--Unregistered device name-->
+    <style name="Device.Name.Unregistered" parent="Device.Name.Impl">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="Device.Name.Unregistered.Impl"></style>
+
+    <!--Device type-->
+    <style name="Device.Type">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/hint_device_type</item>
+        <item name="android:textColor">@color/device_type</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="Device.Type.Impl"></style>
+
+    <!--Device list-->
+    <style name="DeviceList"></style>
+
+    <!--Device list recylcer-->
+    <style name="DeviceList.Recycler">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">?attr/actionBarSize</item>
+        <item name="android:paddingBottom">@dimen/fab_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/fab_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/fab_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/fab_vertical_margin</item>
+    </style>
+
+    <style name="DeviceList.Recycler.Impl"></style>
+
+    <!--Empty device list-->
+    <style name="DeviceList.Empty"></style>
+
+    <!--Empty device list spinner-->
+    <style name="DeviceList.Empty.ProgressBar">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/ripple</item>
+        <item name="android:clickable">false</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="DeviceList.Empty.ProgressBar.Impl"></style>
+
+    <!--Empty device list text-->
+    <style name="DeviceList.Empty.Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/empty_device_list</item>
+    </style>
+
+    <style name="DeviceList.Empty.Text.Impl"></style>
+
+    <!--Empty device list primary text-->
+    <style name="DeviceList.Empty.Text.Primary" parent="DeviceList.Empty.Text.Impl">
+        <item name="android:textSize">24dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="DeviceList.Empty.Text.Primary.Impl"></style>
+
+    <!--Empty device list secondary text-->
+    <style name="DeviceList.Empty.Text.Secondary" parent="DeviceList.Empty.Text.Impl">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="DeviceList.Empty.Text.Secondary.Impl"></style>
+
+    <!--Device details page-->
+    <style name="Details"></style>
+
+    <!--Details header container-->
+    <style name="Details.Header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">220dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:paddingTop">?attr/actionBarSize</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">30dp</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="Details.Header.Impl"></style>
+
+    <!--Details header text wrapper-->
+    <style name="Details.TextWrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Details.TextWrapper.Impl"></style>
+
+    <!--Details image-->
+    <style name="Details.Image">
+        <item name="android:layout_width">@dimen/device_details_image_size</item>
+        <item name="android:layout_height">@dimen/device_details_image_size</item>
+    </style>
+
+    <style name="Details.Image.Impl"></style>
+
+    <!--Details device name-->
+    <style name="Details.Name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/hint_device_name</item>
+        <item name="android:textColor">@color/device_details_name</item>
+        <item name="android:textSize">34dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Details.Name.Impl"></style>
+
+    <!--Details device type-->
+    <style name="Details.Type">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:text">@string/hint_iot_device</item>
+        <item name="android:textColor">@color/device_details_type</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:background">@drawable/device_details_type_background</item>
+    </style>
+
+    <style name="Details.Type.Impl"></style>
+
+    <!--Details last seen-->
+    <style name="Details.LastSeen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/device_details_last_seen</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:text">@string/hint_last_seen_unknown</item>
+    </style>
+
+    <style name="Details.LastSeen.Impl"></style>
+
+    <!--Details radio button-->
+    <style name="Details.RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">66dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="Details.RadioButton.Impl"></style>
+
+    <!--Details LED on button-->
+    <style name="Details.RadioButton.LedOn" parent="Details.RadioButton.Impl">
+        <item name="android:text">LED On</item>
+    </style>
+
+    <style name="Details.RadioButton.LedOn.Impl"></style>
+
+    <!--Details LED off button-->
+    <style name="Details.RadioButton.LedOff" parent="Details.RadioButton.Impl">
+        <item name="android:text">LED Off</item>
+    </style>
+
+    <style name="Details.RadioButton.LedOff.Impl"></style>
+
+    <!--Details blink LED button-->
+    <style name="Details.RadioButton.BlinkLed" parent="Details.RadioButton.Impl">
+        <item name="android:text">Blink LED</item>
+    </style>
+
+    <style name="Details.RadioButton.BlinkLed.Impl"></style>
+
+    <!--Details error messages-->
+    <style name="Details.Error"></style>
+
+    <!--Details last seen error message-->
+    <style name="Details.Error.LastSeen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/device_details_error_background</item>
+        <item name="android:drawableLeft">@drawable/error</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">11dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:text">@string/error_device_inactive_for_time</item>
+        <item name="android:textColor">@color/device_details_error_text</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Details.Error.LastSeen.Impl"></style>
+
+    <!--Floating action button-->
+    <style name="FabButton">
+        <item name="android:layout_width">@dimen/fab_size</item>
+        <item name="android:layout_height">@dimen/fab_size</item>
+        <item name="android:background">@drawable/ripple</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_marginBottom">@dimen/fab_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/fab_horizontal_margin</item>
+        <item name="android:src">@drawable/fab_plus</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="FabButton.Impl"></style>
+
+    <!--Flat buttons-->
+    <style name="FlatButton">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:textColor">@drawable/add_device_dialog_button_text</item>
+    </style>
+
+    <style name="FlatButton.Impl"></style>
+
+    <!--Toolbars-->
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="Toolbar.Impl"></style>
+
+</resources>

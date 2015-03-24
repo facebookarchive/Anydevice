@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		621BBB4B1A6EF22F007DCB3B /* PADMainProvisioningFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621BBB4A1A6EF22F007DCB3B /* PADMainProvisioningFlowViewController.m */; };
+		621CDF1E1AA914CC00838F28 /* PADLogInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 621CDF1D1AA914CC00838F28 /* PADLogInView.m */; };
+		622206511A77E92E00D7F737 /* PADUserSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 622206501A77E92E00D7F737 /* PADUserSession.m */; };
+		622206541A77F99B00D7F737 /* PADDeviceDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 622206531A77F99B00D7F737 /* PADDeviceDetailsViewController.m */; };
+		622206571A782A8200D7F737 /* PADMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 622206561A782A8200D7F737 /* PADMessageService.m */; };
+		6222F79B1A9BDF5D0050326E /* PADDeviceActivityUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6222F79A1A9BDF5D0050326E /* PADDeviceActivityUtilities.m */; };
+		622452521AB0BE2D00C3DAB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 622F7C171A6D5C6C004DFDF5 /* LaunchScreen.xib */; };
+		622F7C0B1A6D5C6C004DFDF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 622F7C0A1A6D5C6C004DFDF5 /* main.m */; };
+		622F7C0E1A6D5C6C004DFDF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 622F7C0D1A6D5C6C004DFDF5 /* AppDelegate.m */; };
+		622F7C161A6D5C6C004DFDF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622F7C151A6D5C6C004DFDF5 /* Images.xcassets */; };
+		624C884D1A6DA7C200D24FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624C884C1A6DA7C200D24FD2 /* Main.storyboard */; };
+		624C88501A6DA7CD00D24FD2 /* PADHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624C884F1A6DA7CD00D24FD2 /* PADHomeViewController.m */; };
+		624C885A1A6DAEDC00D24FD2 /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 624C88591A6DAEDC00D24FD2 /* UIColor+CustomColors.m */; };
+		624C88641A6DB7BA00D24FD2 /* PADTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 624C88621A6DB7BA00D24FD2 /* PADTextField.m */; };
+		624C88741A6EA41800D24FD2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C88731A6EA41800D24FD2 /* AudioToolbox.framework */; };
+		624C88761A6EA41E00D24FD2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C88751A6EA41E00D24FD2 /* CFNetwork.framework */; };
+		624C88781A6EA42400D24FD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C88771A6EA42400D24FD2 /* CoreGraphics.framework */; };
+		624C887A1A6EA43500D24FD2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C88791A6EA43500D24FD2 /* CoreLocation.framework */; };
+		624C887C1A6EA43F00D24FD2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C887B1A6EA43F00D24FD2 /* MobileCoreServices.framework */; };
+		624C887E1A6EA44A00D24FD2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C887D1A6EA44900D24FD2 /* QuartzCore.framework */; };
+		624C88801A6EA45F00D24FD2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C887F1A6EA45F00D24FD2 /* Security.framework */; };
+		624C88821A6EA46600D24FD2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C88811A6EA46600D24FD2 /* StoreKit.framework */; };
+		624C88841A6EA47200D24FD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C88831A6EA47200D24FD2 /* SystemConfiguration.framework */; };
+		624C88861A6EA47F00D24FD2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C88851A6EA47F00D24FD2 /* libz.dylib */; };
+		624C88881A6EA48D00D24FD2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 624C88871A6EA48D00D24FD2 /* libsqlite3.dylib */; };
+		6277B3A01A9D08B8009503E1 /* PADAlertUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6277B39F1A9D08B8009503E1 /* PADAlertUtilities.m */; };
+		627AE6431A705A95006A5322 /* PADUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 627AE6421A705A95006A5322 /* PADUtilities.m */; };
+		629CEE7A1A979C3100DB7EE3 /* PADDeviceReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 629CEE791A979C3100DB7EE3 /* PADDeviceReachabilityManager.m */; };
+		62C12BCB1AA61BD600DEBB69 /* PADLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C12BCA1AA61BD600DEBB69 /* PADLogInViewController.m */; };
+		62C1C8351AA90DD9006FB694 /* PADConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1C8341AA90DD9006FB694 /* PADConstants.m */; };
+		62C1C8381AA90EF6006FB694 /* PADStoryboardConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1C8371AA90EF6006FB694 /* PADStoryboardConstants.m */; };
+		62D001AA1A82D8EC00524E51 /* PADEventsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D001A91A82D8EC00524E51 /* PADEventsService.m */; };
+		62D325B21A7BE02C000FCFF7 /* PADDeviceStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D325B01A7BE02C000FCFF7 /* PADDeviceStateCell.m */; };
+		62D325B31A7BE02C000FCFF7 /* PADDeviceStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62D325B11A7BE02C000FCFF7 /* PADDeviceStateCell.xib */; };
+		62D325B91A7FDAC5000FCFF7 /* PADConfirmProvisioningDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D325B81A7FDAC5000FCFF7 /* PADConfirmProvisioningDetailsViewController.m */; };
+		62D325BC1A7FEA58000FCFF7 /* PADProvisioningDetailsFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D325BB1A7FEA58000FCFF7 /* PADProvisioningDetailsFooterView.m */; };
+		62D325BE1A7FEA9F000FCFF7 /* PADProvisioningDetailsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62D325BD1A7FEA9F000FCFF7 /* PADProvisioningDetailsFooterView.xib */; };
+		62D325C01A8003AB000FCFF7 /* PADPickerAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62D325BF1A8003AB000FCFF7 /* PADPickerAccessoryView.xib */; };
+		62D325C31A8004C3000FCFF7 /* PADPickerAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D325C21A8004C3000FCFF7 /* PADPickerAccessoryView.m */; };
+		62D4D15A1A813AEF003ED4DE /* PADReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D4D1591A813AEF003ED4DE /* PADReachability.m */; };
+		62D5827F1A8E4F9400D99698 /* PADLoadingIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D5827D1A8E4F9400D99698 /* PADLoadingIndicatorController.m */; };
+		62D582801A8E4F9400D99698 /* PADLoadingIndicatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62D5827E1A8E4F9400D99698 /* PADLoadingIndicatorController.xib */; };
+		62D582831A8E832F00D99698 /* PADDeviceStateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D582821A8E832F00D99698 /* PADDeviceStateUtilities.m */; };
+		62D5BF4A1A939954000D3B01 /* PADWifiReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D5BF491A939954000D3B01 /* PADWifiReachabilityManager.m */; };
+		62D5BF4D1A93A1E9000D3B01 /* PADProvisioningEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D5BF4C1A93A1E9000D3B01 /* PADProvisioningEventManager.m */; };
+		62D5BF501A93C8E9000D3B01 /* PADWifiCredentialsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D5BF4F1A93C8E9000D3B01 /* PADWifiCredentialsService.m */; };
+		62DA6C0C1A968BCB000E4BC0 /* PADProvisioningContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DA6C0B1A968BCB000E4BC0 /* PADProvisioningContainerViewController.m */; };
+		62DA6C101A968EE3000E4BC0 /* PADEmbedSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DA6C0F1A968EE3000E4BC0 /* PADEmbedSegue.m */; };
+		62DCCD481A792EFD000C7719 /* PADCreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCCD471A792EFD000C7719 /* PADCreateAccountViewController.m */; };
+		62DCCD4B1A793B4C000C7719 /* PADCreateAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCCD4A1A793B4C000C7719 /* PADCreateAccountView.m */; };
+		62DCCD4E1A797BE9000C7719 /* PADForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCCD4D1A797BE9000C7719 /* PADForgotPasswordViewController.m */; };
+		62DCCD511A798088000C7719 /* PADForgotPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCCD501A798088000C7719 /* PADForgotPasswordView.m */; };
+		62DCCD591A7A9BFF000C7719 /* PADEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCCD581A7A9BFF000C7719 /* PADEvent.m */; };
+		62DE24B51A8A5AF500ED0C2D /* PADProvisioningState.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DE24B41A8A5AF500ED0C2D /* PADProvisioningState.m */; };
+		62DF823D1A72D78300A98225 /* PADMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DF823C1A72D78300A98225 /* PADMessage.m */; };
+		62DF885C1A841CB600647BEC /* PADInfrastructureKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DF885B1A841CB600647BEC /* PADInfrastructureKey.m */; };
+		62E02AED1A71909800B81A1F /* PADDeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E02AEC1A71909800B81A1F /* PADDeviceService.m */; };
+		62E02AF01A7192ED00B81A1F /* PADProvisioningService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E02AEF1A7192ED00B81A1F /* PADProvisioningService.m */; };
+		62E02AF51A71B16800B81A1F /* PADProvisionedDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E02AF31A71B16800B81A1F /* PADProvisionedDeviceCell.m */; };
+		62E02AF61A71B16800B81A1F /* PADProvisionedDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E02AF41A71B16800B81A1F /* PADProvisionedDeviceCell.xib */; };
+		62E327571A8961270035F789 /* PADPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E327561A8961270035F789 /* PADPickerTextField.m */; };
+		62E7DBF81A9F751E008164DE /* PADNetworkUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E7DBF71A9F751E008164DE /* PADNetworkUtilities.m */; };
+		62E7DBFB1A9FC396008164DE /* PADTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E7DBFA1A9FC396008164DE /* PADTimer.m */; };
+		62F073081A7018EE00E0F223 /* PADInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F073071A7018EE00E0F223 /* PADInstallation.m */; };
+		62F073111A703AB900E0F223 /* PADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F073101A703AB900E0F223 /* PADModel.m */; };
+		81ECD3391ABBA8300080D166 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ECD3371ABBA8300080D166 /* Bolts.framework */; };
+		81ECD33A1ABBA8300080D166 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ECD3381ABBA8300080D166 /* Parse.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		621BBB491A6EF22F007DCB3B /* PADMainProvisioningFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADMainProvisioningFlowViewController.h; path = "View Controllers/PADMainProvisioningFlowViewController.h"; sourceTree = "<group>"; };
+		621BBB4A1A6EF22F007DCB3B /* PADMainProvisioningFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADMainProvisioningFlowViewController.m; path = "View Controllers/PADMainProvisioningFlowViewController.m"; sourceTree = "<group>"; };
+		621CDF1C1AA912CB00838F28 /* PADProvisioningProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADProvisioningProtocols.h; path = "View Controllers/PADProvisioningProtocols.h"; sourceTree = "<group>"; };
+		621CDF1D1AA914CC00838F28 /* PADLogInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADLogInView.m; path = Views/PADLogInView.m; sourceTree = "<group>"; };
+		6222064F1A77E92E00D7F737 /* PADUserSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADUserSession.h; path = Models/PADUserSession.h; sourceTree = "<group>"; };
+		622206501A77E92E00D7F737 /* PADUserSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADUserSession.m; path = Models/PADUserSession.m; sourceTree = "<group>"; };
+		622206521A77F99B00D7F737 /* PADDeviceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADDeviceDetailsViewController.h; path = "View Controllers/PADDeviceDetailsViewController.h"; sourceTree = "<group>"; };
+		622206531A77F99B00D7F737 /* PADDeviceDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADDeviceDetailsViewController.m; path = "View Controllers/PADDeviceDetailsViewController.m"; sourceTree = "<group>"; };
+		622206551A782A8200D7F737 /* PADMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADMessageService.h; path = Network/PADMessageService.h; sourceTree = "<group>"; };
+		622206561A782A8200D7F737 /* PADMessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADMessageService.m; path = Network/PADMessageService.m; sourceTree = "<group>"; };
+		6222F7991A9BDF5D0050326E /* PADDeviceActivityUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADDeviceActivityUtilities.h; path = Utilities/PADDeviceActivityUtilities.h; sourceTree = "<group>"; };
+		6222F79A1A9BDF5D0050326E /* PADDeviceActivityUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADDeviceActivityUtilities.m; path = Utilities/PADDeviceActivityUtilities.m; sourceTree = "<group>"; };
+		622F7C051A6D5C6C004DFDF5 /* Anydevice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anydevice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		622F7C091A6D5C6C004DFDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		622F7C0A1A6D5C6C004DFDF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		622F7C0C1A6D5C6C004DFDF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		622F7C0D1A6D5C6C004DFDF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		622F7C151A6D5C6C004DFDF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		622F7C181A6D5C6C004DFDF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		624C884C1A6DA7C200D24FD2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		624C884E1A6DA7CD00D24FD2 /* PADHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADHomeViewController.h; path = "View Controllers/PADHomeViewController.h"; sourceTree = "<group>"; };
+		624C884F1A6DA7CD00D24FD2 /* PADHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADHomeViewController.m; path = "View Controllers/PADHomeViewController.m"; sourceTree = "<group>"; };
+		624C88581A6DAEDC00D24FD2 /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+CustomColors.h"; path = "Utilities/UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		624C88591A6DAEDC00D24FD2 /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CustomColors.m"; path = "Utilities/UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		624C88611A6DB7BA00D24FD2 /* PADTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADTextField.h; path = Views/PADTextField.h; sourceTree = "<group>"; };
+		624C88621A6DB7BA00D24FD2 /* PADTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADTextField.m; path = Views/PADTextField.m; sourceTree = "<group>"; };
+		624C88731A6EA41800D24FD2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		624C88751A6EA41E00D24FD2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		624C88771A6EA42400D24FD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		624C88791A6EA43500D24FD2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		624C887B1A6EA43F00D24FD2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		624C887D1A6EA44900D24FD2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		624C887F1A6EA45F00D24FD2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		624C88811A6EA46600D24FD2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		624C88831A6EA47200D24FD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		624C88851A6EA47F00D24FD2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		624C88871A6EA48D00D24FD2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6277B39E1A9D08B8009503E1 /* PADAlertUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADAlertUtilities.h; path = Utilities/PADAlertUtilities.h; sourceTree = "<group>"; };
+		6277B39F1A9D08B8009503E1 /* PADAlertUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADAlertUtilities.m; path = Utilities/PADAlertUtilities.m; sourceTree = "<group>"; };
+		627AE6411A705A95006A5322 /* PADUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADUtilities.h; path = Utilities/PADUtilities.h; sourceTree = "<group>"; };
+		627AE6421A705A95006A5322 /* PADUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADUtilities.m; path = Utilities/PADUtilities.m; sourceTree = "<group>"; };
+		629CEE781A979C3100DB7EE3 /* PADDeviceReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADDeviceReachabilityManager.h; path = Network/PADDeviceReachabilityManager.h; sourceTree = "<group>"; };
+		629CEE791A979C3100DB7EE3 /* PADDeviceReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADDeviceReachabilityManager.m; path = Network/PADDeviceReachabilityManager.m; sourceTree = "<group>"; };
+		62C12BC91AA61BD600DEBB69 /* PADLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADLogInViewController.h; path = "View Controllers/PADLogInViewController.h"; sourceTree = "<group>"; };
+		62C12BCA1AA61BD600DEBB69 /* PADLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADLogInViewController.m; path = "View Controllers/PADLogInViewController.m"; sourceTree = "<group>"; };
+		62C12BCC1AA61C3000DEBB69 /* PADLogInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADLogInView.h; path = Views/PADLogInView.h; sourceTree = "<group>"; };
+		62C1C8331AA90DD9006FB694 /* PADConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADConstants.h; path = Utilities/PADConstants.h; sourceTree = "<group>"; };
+		62C1C8341AA90DD9006FB694 /* PADConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADConstants.m; path = Utilities/PADConstants.m; sourceTree = "<group>"; };
+		62C1C8361AA90EF6006FB694 /* PADStoryboardConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADStoryboardConstants.h; path = Utilities/PADStoryboardConstants.h; sourceTree = "<group>"; };
+		62C1C8371AA90EF6006FB694 /* PADStoryboardConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADStoryboardConstants.m; path = Utilities/PADStoryboardConstants.m; sourceTree = "<group>"; };
+		62D001A81A82D8EC00524E51 /* PADEventsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADEventsService.h; path = Network/PADEventsService.h; sourceTree = "<group>"; };
+		62D001A91A82D8EC00524E51 /* PADEventsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADEventsService.m; path = Network/PADEventsService.m; sourceTree = "<group>"; };
+		62D325AF1A7BE02C000FCFF7 /* PADDeviceStateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADDeviceStateCell.h; path = "Views/Table View Cells/PADDeviceStateCell.h"; sourceTree = "<group>"; };
+		62D325B01A7BE02C000FCFF7 /* PADDeviceStateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADDeviceStateCell.m; path = "Views/Table View Cells/PADDeviceStateCell.m"; sourceTree = "<group>"; };
+		62D325B11A7BE02C000FCFF7 /* PADDeviceStateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PADDeviceStateCell.xib; path = "Views/Table View Cells/PADDeviceStateCell.xib"; sourceTree = "<group>"; };
+		62D325B71A7FDAC5000FCFF7 /* PADConfirmProvisioningDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADConfirmProvisioningDetailsViewController.h; path = "View Controllers/PADConfirmProvisioningDetailsViewController.h"; sourceTree = "<group>"; };
+		62D325B81A7FDAC5000FCFF7 /* PADConfirmProvisioningDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADConfirmProvisioningDetailsViewController.m; path = "View Controllers/PADConfirmProvisioningDetailsViewController.m"; sourceTree = "<group>"; };
+		62D325BA1A7FEA58000FCFF7 /* PADProvisioningDetailsFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADProvisioningDetailsFooterView.h; path = "Views/Table View Cells/PADProvisioningDetailsFooterView.h"; sourceTree = "<group>"; };
+		62D325BB1A7FEA58000FCFF7 /* PADProvisioningDetailsFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADProvisioningDetailsFooterView.m; path = "Views/Table View Cells/PADProvisioningDetailsFooterView.m"; sourceTree = "<group>"; };
+		62D325BD1A7FEA9F000FCFF7 /* PADProvisioningDetailsFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PADProvisioningDetailsFooterView.xib; path = "Views/Table View Cells/PADProvisioningDetailsFooterView.xib"; sourceTree = "<group>"; };
+		62D325BF1A8003AB000FCFF7 /* PADPickerAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PADPickerAccessoryView.xib; sourceTree = "<group>"; };
+		62D325C11A8004C3000FCFF7 /* PADPickerAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADPickerAccessoryView.h; path = Views/PADPickerAccessoryView.h; sourceTree = "<group>"; };
+		62D325C21A8004C3000FCFF7 /* PADPickerAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADPickerAccessoryView.m; path = Views/PADPickerAccessoryView.m; sourceTree = "<group>"; };
+		62D4D1581A813AEF003ED4DE /* PADReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADReachability.h; path = Network/PADReachability.h; sourceTree = "<group>"; };
+		62D4D1591A813AEF003ED4DE /* PADReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADReachability.m; path = Network/PADReachability.m; sourceTree = "<group>"; };
+		62D5827C1A8E4F9400D99698 /* PADLoadingIndicatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADLoadingIndicatorController.h; path = "View Controllers/PADLoadingIndicatorController.h"; sourceTree = "<group>"; };
+		62D5827D1A8E4F9400D99698 /* PADLoadingIndicatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADLoadingIndicatorController.m; path = "View Controllers/PADLoadingIndicatorController.m"; sourceTree = "<group>"; };
+		62D5827E1A8E4F9400D99698 /* PADLoadingIndicatorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PADLoadingIndicatorController.xib; path = "View Controllers/PADLoadingIndicatorController.xib"; sourceTree = "<group>"; };
+		62D582811A8E832F00D99698 /* PADDeviceStateUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADDeviceStateUtilities.h; path = Utilities/PADDeviceStateUtilities.h; sourceTree = "<group>"; };
+		62D582821A8E832F00D99698 /* PADDeviceStateUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADDeviceStateUtilities.m; path = Utilities/PADDeviceStateUtilities.m; sourceTree = "<group>"; };
+		62D5BF481A939954000D3B01 /* PADWifiReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADWifiReachabilityManager.h; path = Network/PADWifiReachabilityManager.h; sourceTree = "<group>"; };
+		62D5BF491A939954000D3B01 /* PADWifiReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADWifiReachabilityManager.m; path = Network/PADWifiReachabilityManager.m; sourceTree = "<group>"; };
+		62D5BF4B1A93A1E9000D3B01 /* PADProvisioningEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADProvisioningEventManager.h; path = Network/PADProvisioningEventManager.h; sourceTree = "<group>"; };
+		62D5BF4C1A93A1E9000D3B01 /* PADProvisioningEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADProvisioningEventManager.m; path = Network/PADProvisioningEventManager.m; sourceTree = "<group>"; };
+		62D5BF4E1A93C8E9000D3B01 /* PADWifiCredentialsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADWifiCredentialsService.h; path = Network/PADWifiCredentialsService.h; sourceTree = "<group>"; };
+		62D5BF4F1A93C8E9000D3B01 /* PADWifiCredentialsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADWifiCredentialsService.m; path = Network/PADWifiCredentialsService.m; sourceTree = "<group>"; };
+		62DA6C0A1A968BCB000E4BC0 /* PADProvisioningContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADProvisioningContainerViewController.h; path = "View Controllers/PADProvisioningContainerViewController.h"; sourceTree = "<group>"; };
+		62DA6C0B1A968BCB000E4BC0 /* PADProvisioningContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADProvisioningContainerViewController.m; path = "View Controllers/PADProvisioningContainerViewController.m"; sourceTree = "<group>"; };
+		62DA6C0E1A968EE3000E4BC0 /* PADEmbedSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADEmbedSegue.h; path = Segues/PADEmbedSegue.h; sourceTree = "<group>"; };
+		62DA6C0F1A968EE3000E4BC0 /* PADEmbedSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADEmbedSegue.m; path = Segues/PADEmbedSegue.m; sourceTree = "<group>"; };
+		62DCCD461A792EFD000C7719 /* PADCreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADCreateAccountViewController.h; path = "View Controllers/PADCreateAccountViewController.h"; sourceTree = "<group>"; };
+		62DCCD471A792EFD000C7719 /* PADCreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADCreateAccountViewController.m; path = "View Controllers/PADCreateAccountViewController.m"; sourceTree = "<group>"; };
+		62DCCD491A793B4C000C7719 /* PADCreateAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADCreateAccountView.h; path = Views/PADCreateAccountView.h; sourceTree = "<group>"; };
+		62DCCD4A1A793B4C000C7719 /* PADCreateAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADCreateAccountView.m; path = Views/PADCreateAccountView.m; sourceTree = "<group>"; };
+		62DCCD4C1A797BE9000C7719 /* PADForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADForgotPasswordViewController.h; path = "View Controllers/PADForgotPasswordViewController.h"; sourceTree = "<group>"; };
+		62DCCD4D1A797BE9000C7719 /* PADForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADForgotPasswordViewController.m; path = "View Controllers/PADForgotPasswordViewController.m"; sourceTree = "<group>"; };
+		62DCCD4F1A798088000C7719 /* PADForgotPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADForgotPasswordView.h; path = Views/PADForgotPasswordView.h; sourceTree = "<group>"; };
+		62DCCD501A798088000C7719 /* PADForgotPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADForgotPasswordView.m; path = Views/PADForgotPasswordView.m; sourceTree = "<group>"; };
+		62DCCD571A7A9BFF000C7719 /* PADEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADEvent.h; path = Models/PADEvent.h; sourceTree = "<group>"; };
+		62DCCD581A7A9BFF000C7719 /* PADEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADEvent.m; path = Models/PADEvent.m; sourceTree = "<group>"; };
+		62DE24B31A8A5AF500ED0C2D /* PADProvisioningState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADProvisioningState.h; path = Models/PADProvisioningState.h; sourceTree = "<group>"; };
+		62DE24B41A8A5AF500ED0C2D /* PADProvisioningState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADProvisioningState.m; path = Models/PADProvisioningState.m; sourceTree = "<group>"; };
+		62DF823B1A72D78300A98225 /* PADMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADMessage.h; path = Models/PADMessage.h; sourceTree = "<group>"; };
+		62DF823C1A72D78300A98225 /* PADMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADMessage.m; path = Models/PADMessage.m; sourceTree = "<group>"; };
+		62DF885A1A841CB600647BEC /* PADInfrastructureKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADInfrastructureKey.h; path = Models/PADInfrastructureKey.h; sourceTree = "<group>"; };
+		62DF885B1A841CB600647BEC /* PADInfrastructureKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADInfrastructureKey.m; path = Models/PADInfrastructureKey.m; sourceTree = "<group>"; };
+		62E02AEB1A71909800B81A1F /* PADDeviceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADDeviceService.h; path = Network/PADDeviceService.h; sourceTree = "<group>"; };
+		62E02AEC1A71909800B81A1F /* PADDeviceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADDeviceService.m; path = Network/PADDeviceService.m; sourceTree = "<group>"; };
+		62E02AEE1A7192ED00B81A1F /* PADProvisioningService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADProvisioningService.h; path = Network/PADProvisioningService.h; sourceTree = "<group>"; };
+		62E02AEF1A7192ED00B81A1F /* PADProvisioningService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADProvisioningService.m; path = Network/PADProvisioningService.m; sourceTree = "<group>"; };
+		62E02AF21A71B16800B81A1F /* PADProvisionedDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADProvisionedDeviceCell.h; path = "Views/Collection View Cells/PADProvisionedDeviceCell.h"; sourceTree = "<group>"; };
+		62E02AF31A71B16800B81A1F /* PADProvisionedDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADProvisionedDeviceCell.m; path = "Views/Collection View Cells/PADProvisionedDeviceCell.m"; sourceTree = "<group>"; };
+		62E02AF41A71B16800B81A1F /* PADProvisionedDeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PADProvisionedDeviceCell.xib; path = "Views/Collection View Cells/PADProvisionedDeviceCell.xib"; sourceTree = "<group>"; };
+		62E327551A8961270035F789 /* PADPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADPickerTextField.h; path = Views/PADPickerTextField.h; sourceTree = "<group>"; };
+		62E327561A8961270035F789 /* PADPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADPickerTextField.m; path = Views/PADPickerTextField.m; sourceTree = "<group>"; };
+		62E7DBF61A9F751E008164DE /* PADNetworkUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADNetworkUtilities.h; path = Utilities/PADNetworkUtilities.h; sourceTree = "<group>"; };
+		62E7DBF71A9F751E008164DE /* PADNetworkUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADNetworkUtilities.m; path = Utilities/PADNetworkUtilities.m; sourceTree = "<group>"; };
+		62E7DBF91A9FC396008164DE /* PADTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADTimer.h; path = Utilities/PADTimer.h; sourceTree = "<group>"; };
+		62E7DBFA1A9FC396008164DE /* PADTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADTimer.m; path = Utilities/PADTimer.m; sourceTree = "<group>"; };
+		62F073061A7018EE00E0F223 /* PADInstallation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADInstallation.h; path = Models/PADInstallation.h; sourceTree = "<group>"; };
+		62F073071A7018EE00E0F223 /* PADInstallation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADInstallation.m; path = Models/PADInstallation.m; sourceTree = "<group>"; };
+		62F0730F1A703AB900E0F223 /* PADModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PADModel.h; path = Models/PADModel.h; sourceTree = "<group>"; };
+		62F073101A703AB900E0F223 /* PADModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADModel.m; path = Models/PADModel.m; sourceTree = "<group>"; };
+		81ECD3371ABBA8300080D166 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../Vendor/Bolts.framework; sourceTree = "<group>"; };
+		81ECD3381ABBA8300080D166 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Vendor/Parse.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		622F7C021A6D5C6C004DFDF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624C88881A6EA48D00D24FD2 /* libsqlite3.dylib in Frameworks */,
+				624C88861A6EA47F00D24FD2 /* libz.dylib in Frameworks */,
+				624C88841A6EA47200D24FD2 /* SystemConfiguration.framework in Frameworks */,
+				81ECD3391ABBA8300080D166 /* Bolts.framework in Frameworks */,
+				624C88821A6EA46600D24FD2 /* StoreKit.framework in Frameworks */,
+				624C88801A6EA45F00D24FD2 /* Security.framework in Frameworks */,
+				81ECD33A1ABBA8300080D166 /* Parse.framework in Frameworks */,
+				624C887E1A6EA44A00D24FD2 /* QuartzCore.framework in Frameworks */,
+				624C887C1A6EA43F00D24FD2 /* MobileCoreServices.framework in Frameworks */,
+				624C887A1A6EA43500D24FD2 /* CoreLocation.framework in Frameworks */,
+				624C88781A6EA42400D24FD2 /* CoreGraphics.framework in Frameworks */,
+				624C88761A6EA41E00D24FD2 /* CFNetwork.framework in Frameworks */,
+				624C88741A6EA41800D24FD2 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		622F7BFC1A6D5C6C004DFDF5 = {
+			isa = PBXGroup;
+			children = (
+				622F7C071A6D5C6C004DFDF5 /* Anydevice */,
+				624C886E1A6EA3CD00D24FD2 /* Frameworks */,
+				622F7C061A6D5C6C004DFDF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		622F7C061A6D5C6C004DFDF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				622F7C051A6D5C6C004DFDF5 /* Anydevice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		622F7C071A6D5C6C004DFDF5 /* Anydevice */ = {
+			isa = PBXGroup;
+			children = (
+				622F7C0C1A6D5C6C004DFDF5 /* AppDelegate.h */,
+				622F7C0D1A6D5C6C004DFDF5 /* AppDelegate.m */,
+				62F073051A7017B300E0F223 /* Models */,
+				62E02AEA1A71906300B81A1F /* Network */,
+				624C884A1A6DA6F800D24FD2 /* View Controllers */,
+				624C885E1A6DB77000D24FD2 /* Views */,
+				62DA6C0D1A968EC3000E4BC0 /* Segues */,
+				624C88541A6DADF100D24FD2 /* Utilities */,
+				624C884B1A6DA70300D24FD2 /* Storyboards */,
+				81ECD3351ABB9D260080D166 /* Resources */,
+				622F7C081A6D5C6C004DFDF5 /* Supporting Files */,
+			);
+			path = Anydevice;
+			sourceTree = "<group>";
+		};
+		622F7C081A6D5C6C004DFDF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				622F7C091A6D5C6C004DFDF5 /* Info.plist */,
+				622F7C0A1A6D5C6C004DFDF5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		624C884A1A6DA6F800D24FD2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62D325B71A7FDAC5000FCFF7 /* PADConfirmProvisioningDetailsViewController.h */,
+				62D325B81A7FDAC5000FCFF7 /* PADConfirmProvisioningDetailsViewController.m */,
+				62DCCD461A792EFD000C7719 /* PADCreateAccountViewController.h */,
+				62DCCD471A792EFD000C7719 /* PADCreateAccountViewController.m */,
+				622206521A77F99B00D7F737 /* PADDeviceDetailsViewController.h */,
+				622206531A77F99B00D7F737 /* PADDeviceDetailsViewController.m */,
+				62DCCD4C1A797BE9000C7719 /* PADForgotPasswordViewController.h */,
+				62DCCD4D1A797BE9000C7719 /* PADForgotPasswordViewController.m */,
+				624C884E1A6DA7CD00D24FD2 /* PADHomeViewController.h */,
+				624C884F1A6DA7CD00D24FD2 /* PADHomeViewController.m */,
+				62D5827C1A8E4F9400D99698 /* PADLoadingIndicatorController.h */,
+				62D5827D1A8E4F9400D99698 /* PADLoadingIndicatorController.m */,
+				62D5827E1A8E4F9400D99698 /* PADLoadingIndicatorController.xib */,
+				62C12BC91AA61BD600DEBB69 /* PADLogInViewController.h */,
+				62C12BCA1AA61BD600DEBB69 /* PADLogInViewController.m */,
+				621BBB491A6EF22F007DCB3B /* PADMainProvisioningFlowViewController.h */,
+				621BBB4A1A6EF22F007DCB3B /* PADMainProvisioningFlowViewController.m */,
+				62DA6C0A1A968BCB000E4BC0 /* PADProvisioningContainerViewController.h */,
+				62DA6C0B1A968BCB000E4BC0 /* PADProvisioningContainerViewController.m */,
+				621CDF1C1AA912CB00838F28 /* PADProvisioningProtocols.h */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		624C884B1A6DA70300D24FD2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				624C884C1A6DA7C200D24FD2 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		624C88541A6DADF100D24FD2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				62C1C8361AA90EF6006FB694 /* PADStoryboardConstants.h */,
+				62C1C8371AA90EF6006FB694 /* PADStoryboardConstants.m */,
+				62E7DBF61A9F751E008164DE /* PADNetworkUtilities.h */,
+				62E7DBF71A9F751E008164DE /* PADNetworkUtilities.m */,
+				6277B39E1A9D08B8009503E1 /* PADAlertUtilities.h */,
+				6277B39F1A9D08B8009503E1 /* PADAlertUtilities.m */,
+				62C1C8331AA90DD9006FB694 /* PADConstants.h */,
+				62C1C8341AA90DD9006FB694 /* PADConstants.m */,
+				6222F7991A9BDF5D0050326E /* PADDeviceActivityUtilities.h */,
+				6222F79A1A9BDF5D0050326E /* PADDeviceActivityUtilities.m */,
+				62D582811A8E832F00D99698 /* PADDeviceStateUtilities.h */,
+				62D582821A8E832F00D99698 /* PADDeviceStateUtilities.m */,
+				62E7DBF91A9FC396008164DE /* PADTimer.h */,
+				62E7DBFA1A9FC396008164DE /* PADTimer.m */,
+				624C88581A6DAEDC00D24FD2 /* UIColor+CustomColors.h */,
+				624C88591A6DAEDC00D24FD2 /* UIColor+CustomColors.m */,
+				627AE6411A705A95006A5322 /* PADUtilities.h */,
+				627AE6421A705A95006A5322 /* PADUtilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		624C885E1A6DB77000D24FD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62DCCD491A793B4C000C7719 /* PADCreateAccountView.h */,
+				62DCCD4A1A793B4C000C7719 /* PADCreateAccountView.m */,
+				62DCCD4F1A798088000C7719 /* PADForgotPasswordView.h */,
+				62DCCD501A798088000C7719 /* PADForgotPasswordView.m */,
+				62C12BCC1AA61C3000DEBB69 /* PADLogInView.h */,
+				621CDF1D1AA914CC00838F28 /* PADLogInView.m */,
+				624C88611A6DB7BA00D24FD2 /* PADTextField.h */,
+				624C88621A6DB7BA00D24FD2 /* PADTextField.m */,
+				62D325C11A8004C3000FCFF7 /* PADPickerAccessoryView.h */,
+				62D325C21A8004C3000FCFF7 /* PADPickerAccessoryView.m */,
+				62D325BF1A8003AB000FCFF7 /* PADPickerAccessoryView.xib */,
+				62E327551A8961270035F789 /* PADPickerTextField.h */,
+				62E327561A8961270035F789 /* PADPickerTextField.m */,
+				62E02AF11A71B11300B81A1F /* Collection View Cells */,
+				62D325AE1A7BDFEB000FCFF7 /* Table View Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		624C886E1A6EA3CD00D24FD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81ECD3371ABBA8300080D166 /* Bolts.framework */,
+				81ECD3381ABBA8300080D166 /* Parse.framework */,
+				81ECD3341ABB9B350080D166 /* System Frameworks */,
+			);
+			name = Frameworks;
+			path = Anydevice;
+			sourceTree = "<group>";
+		};
+		62D325AE1A7BDFEB000FCFF7 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				62D325BA1A7FEA58000FCFF7 /* PADProvisioningDetailsFooterView.h */,
+				62D325BB1A7FEA58000FCFF7 /* PADProvisioningDetailsFooterView.m */,
+				62D325BD1A7FEA9F000FCFF7 /* PADProvisioningDetailsFooterView.xib */,
+				62D325AF1A7BE02C000FCFF7 /* PADDeviceStateCell.h */,
+				62D325B01A7BE02C000FCFF7 /* PADDeviceStateCell.m */,
+				62D325B11A7BE02C000FCFF7 /* PADDeviceStateCell.xib */,
+			);
+			name = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		62DA6C0D1A968EC3000E4BC0 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				62DA6C0E1A968EE3000E4BC0 /* PADEmbedSegue.h */,
+				62DA6C0F1A968EE3000E4BC0 /* PADEmbedSegue.m */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
+		62E02AEA1A71906300B81A1F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				629CEE781A979C3100DB7EE3 /* PADDeviceReachabilityManager.h */,
+				629CEE791A979C3100DB7EE3 /* PADDeviceReachabilityManager.m */,
+				62D001A81A82D8EC00524E51 /* PADEventsService.h */,
+				62D001A91A82D8EC00524E51 /* PADEventsService.m */,
+				622206551A782A8200D7F737 /* PADMessageService.h */,
+				622206561A782A8200D7F737 /* PADMessageService.m */,
+				62E02AEB1A71909800B81A1F /* PADDeviceService.h */,
+				62E02AEC1A71909800B81A1F /* PADDeviceService.m */,
+				62D5BF4B1A93A1E9000D3B01 /* PADProvisioningEventManager.h */,
+				62D5BF4C1A93A1E9000D3B01 /* PADProvisioningEventManager.m */,
+				62E02AEE1A7192ED00B81A1F /* PADProvisioningService.h */,
+				62E02AEF1A7192ED00B81A1F /* PADProvisioningService.m */,
+				62D4D1581A813AEF003ED4DE /* PADReachability.h */,
+				62D4D1591A813AEF003ED4DE /* PADReachability.m */,
+				62D5BF4E1A93C8E9000D3B01 /* PADWifiCredentialsService.h */,
+				62D5BF4F1A93C8E9000D3B01 /* PADWifiCredentialsService.m */,
+				62D5BF481A939954000D3B01 /* PADWifiReachabilityManager.h */,
+				62D5BF491A939954000D3B01 /* PADWifiReachabilityManager.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		62E02AF11A71B11300B81A1F /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				62E02AF21A71B16800B81A1F /* PADProvisionedDeviceCell.h */,
+				62E02AF31A71B16800B81A1F /* PADProvisionedDeviceCell.m */,
+				62E02AF41A71B16800B81A1F /* PADProvisionedDeviceCell.xib */,
+			);
+			name = "Collection View Cells";
+			sourceTree = "<group>";
+		};
+		62F073051A7017B300E0F223 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62DCCD571A7A9BFF000C7719 /* PADEvent.h */,
+				62DCCD581A7A9BFF000C7719 /* PADEvent.m */,
+				62DF885A1A841CB600647BEC /* PADInfrastructureKey.h */,
+				62DF885B1A841CB600647BEC /* PADInfrastructureKey.m */,
+				62F073061A7018EE00E0F223 /* PADInstallation.h */,
+				62F073071A7018EE00E0F223 /* PADInstallation.m */,
+				62DF823B1A72D78300A98225 /* PADMessage.h */,
+				62DF823C1A72D78300A98225 /* PADMessage.m */,
+				62F0730F1A703AB900E0F223 /* PADModel.h */,
+				62F073101A703AB900E0F223 /* PADModel.m */,
+				62DE24B31A8A5AF500ED0C2D /* PADProvisioningState.h */,
+				62DE24B41A8A5AF500ED0C2D /* PADProvisioningState.m */,
+				6222064F1A77E92E00D7F737 /* PADUserSession.h */,
+				622206501A77E92E00D7F737 /* PADUserSession.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		81ECD3341ABB9B350080D166 /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				624C88871A6EA48D00D24FD2 /* libsqlite3.dylib */,
+				624C88851A6EA47F00D24FD2 /* libz.dylib */,
+				624C88831A6EA47200D24FD2 /* SystemConfiguration.framework */,
+				624C88811A6EA46600D24FD2 /* StoreKit.framework */,
+				624C887F1A6EA45F00D24FD2 /* Security.framework */,
+				624C887D1A6EA44900D24FD2 /* QuartzCore.framework */,
+				624C887B1A6EA43F00D24FD2 /* MobileCoreServices.framework */,
+				624C88791A6EA43500D24FD2 /* CoreLocation.framework */,
+				624C88771A6EA42400D24FD2 /* CoreGraphics.framework */,
+				624C88751A6EA41E00D24FD2 /* CFNetwork.framework */,
+				624C88731A6EA41800D24FD2 /* AudioToolbox.framework */,
+			);
+			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		81ECD3351ABB9D260080D166 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				622F7C151A6D5C6C004DFDF5 /* Images.xcassets */,
+				622F7C171A6D5C6C004DFDF5 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		622F7C041A6D5C6C004DFDF5 /* Anydevice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 622F7C281A6D5C6C004DFDF5 /* Build configuration list for PBXNativeTarget "Anydevice" */;
+			buildPhases = (
+				622F7C011A6D5C6C004DFDF5 /* Sources */,
+				622F7C021A6D5C6C004DFDF5 /* Frameworks */,
+				622F7C031A6D5C6C004DFDF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anydevice;
+			productName = ParseSampleApplication;
+			productReference = 622F7C051A6D5C6C004DFDF5 /* Anydevice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		622F7BFD1A6D5C6C004DFDF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = DX179;
+				TargetAttributes = {
+					622F7C041A6D5C6C004DFDF5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 622F7C001A6D5C6C004DFDF5 /* Build configuration list for PBXProject "Anydevice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 622F7BFC1A6D5C6C004DFDF5;
+			productRefGroup = 622F7C061A6D5C6C004DFDF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				622F7C041A6D5C6C004DFDF5 /* Anydevice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		622F7C031A6D5C6C004DFDF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622452521AB0BE2D00C3DAB9 /* LaunchScreen.xib in Resources */,
+				624C884D1A6DA7C200D24FD2 /* Main.storyboard in Resources */,
+				622F7C161A6D5C6C004DFDF5 /* Images.xcassets in Resources */,
+				62D325B31A7BE02C000FCFF7 /* PADDeviceStateCell.xib in Resources */,
+				62D325C01A8003AB000FCFF7 /* PADPickerAccessoryView.xib in Resources */,
+				62D582801A8E4F9400D99698 /* PADLoadingIndicatorController.xib in Resources */,
+				62D325BE1A7FEA9F000FCFF7 /* PADProvisioningDetailsFooterView.xib in Resources */,
+				62E02AF61A71B16800B81A1F /* PADProvisionedDeviceCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		622F7C011A6D5C6C004DFDF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DE24B51A8A5AF500ED0C2D /* PADProvisioningState.m in Sources */,
+				6222F79B1A9BDF5D0050326E /* PADDeviceActivityUtilities.m in Sources */,
+				62E327571A8961270035F789 /* PADPickerTextField.m in Sources */,
+				62DCCD4B1A793B4C000C7719 /* PADCreateAccountView.m in Sources */,
+				62E02AED1A71909800B81A1F /* PADDeviceService.m in Sources */,
+				62C1C8351AA90DD9006FB694 /* PADConstants.m in Sources */,
+				62E7DBF81A9F751E008164DE /* PADNetworkUtilities.m in Sources */,
+				624C88501A6DA7CD00D24FD2 /* PADHomeViewController.m in Sources */,
+				62E02AF51A71B16800B81A1F /* PADProvisionedDeviceCell.m in Sources */,
+				62C12BCB1AA61BD600DEBB69 /* PADLogInViewController.m in Sources */,
+				624C885A1A6DAEDC00D24FD2 /* UIColor+CustomColors.m in Sources */,
+				622F7C0E1A6D5C6C004DFDF5 /* AppDelegate.m in Sources */,
+				62DCCD4E1A797BE9000C7719 /* PADForgotPasswordViewController.m in Sources */,
+				62E02AF01A7192ED00B81A1F /* PADProvisioningService.m in Sources */,
+				62C1C8381AA90EF6006FB694 /* PADStoryboardConstants.m in Sources */,
+				62DCCD481A792EFD000C7719 /* PADCreateAccountViewController.m in Sources */,
+				62D001AA1A82D8EC00524E51 /* PADEventsService.m in Sources */,
+				62DF823D1A72D78300A98225 /* PADMessage.m in Sources */,
+				624C88641A6DB7BA00D24FD2 /* PADTextField.m in Sources */,
+				629CEE7A1A979C3100DB7EE3 /* PADDeviceReachabilityManager.m in Sources */,
+				62D4D15A1A813AEF003ED4DE /* PADReachability.m in Sources */,
+				62D325B91A7FDAC5000FCFF7 /* PADConfirmProvisioningDetailsViewController.m in Sources */,
+				62D325C31A8004C3000FCFF7 /* PADPickerAccessoryView.m in Sources */,
+				622F7C0B1A6D5C6C004DFDF5 /* main.m in Sources */,
+				62DCCD511A798088000C7719 /* PADForgotPasswordView.m in Sources */,
+				62DCCD591A7A9BFF000C7719 /* PADEvent.m in Sources */,
+				62D325B21A7BE02C000FCFF7 /* PADDeviceStateCell.m in Sources */,
+				622206571A782A8200D7F737 /* PADMessageService.m in Sources */,
+				621BBB4B1A6EF22F007DCB3B /* PADMainProvisioningFlowViewController.m in Sources */,
+				62DF885C1A841CB600647BEC /* PADInfrastructureKey.m in Sources */,
+				62F073111A703AB900E0F223 /* PADModel.m in Sources */,
+				62D5827F1A8E4F9400D99698 /* PADLoadingIndicatorController.m in Sources */,
+				621CDF1E1AA914CC00838F28 /* PADLogInView.m in Sources */,
+				62DA6C0C1A968BCB000E4BC0 /* PADProvisioningContainerViewController.m in Sources */,
+				627AE6431A705A95006A5322 /* PADUtilities.m in Sources */,
+				62D325BC1A7FEA58000FCFF7 /* PADProvisioningDetailsFooterView.m in Sources */,
+				62D5BF501A93C8E9000D3B01 /* PADWifiCredentialsService.m in Sources */,
+				62DA6C101A968EE3000E4BC0 /* PADEmbedSegue.m in Sources */,
+				62F073081A7018EE00E0F223 /* PADInstallation.m in Sources */,
+				62D582831A8E832F00D99698 /* PADDeviceStateUtilities.m in Sources */,
+				622206541A77F99B00D7F737 /* PADDeviceDetailsViewController.m in Sources */,
+				62D5BF4D1A93A1E9000D3B01 /* PADProvisioningEventManager.m in Sources */,
+				62E7DBFB1A9FC396008164DE /* PADTimer.m in Sources */,
+				622206511A77E92E00D7F737 /* PADUserSession.m in Sources */,
+				62D5BF4A1A939954000D3B01 /* PADWifiReachabilityManager.m in Sources */,
+				6277B3A01A9D08B8009503E1 /* PADAlertUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		622F7C171A6D5C6C004DFDF5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				622F7C181A6D5C6C004DFDF5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		622F7C261A6D5C6C004DFDF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		622F7C271A6D5C6C004DFDF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		622F7C291A6D5C6C004DFDF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Anydevice",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				INFOPLIST_FILE = Anydevice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Anydevice;
+			};
+			name = Debug;
+		};
+		622F7C2A1A6D5C6C004DFDF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Anydevice",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				INFOPLIST_FILE = Anydevice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Anydevice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		622F7C001A6D5C6C004DFDF5 /* Build configuration list for PBXProject "Anydevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622F7C261A6D5C6C004DFDF5 /* Debug */,
+				622F7C271A6D5C6C004DFDF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		622F7C281A6D5C6C004DFDF5 /* Build configuration list for PBXNativeTarget "Anydevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622F7C291A6D5C6C004DFDF5 /* Debug */,
+				622F7C2A1A6D5C6C004DFDF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 622F7BFD1A6D5C6C004DFDF5 /* Project object */;
+}

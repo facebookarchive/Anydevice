@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PADLoadingIndicatorController">
+            <connections>
+                <outlet property="loadingContainerView" destination="OSP-0S-5qN" id="HL5-u0-Ddh"/>
+                <outlet property="loadingLabel" destination="sj7-Sc-ZsM" id="9gY-Lq-Ovk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGK-me-VGk" userLabel="overlayView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSP-0S-5qN" userLabel="loadingContainerView">
+                    <rect key="frame" x="223" y="269" width="154" height="63"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eCs-0L-3Lr" userLabel="loadingIndicator">
+                            <rect key="frame" x="10" y="22" width="20" height="20"/>
+                            <color key="color" red="0.34901960784313724" green="0.41960784313725491" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading. . ." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sj7-Sc-ZsM" userLabel="loadingLabel">
+                            <rect key="frame" x="45" y="20" width="99" height="23"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                            <color key="textColor" red="0.34901960784313724" green="0.41960784313725491" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sj7-Sc-ZsM" firstAttribute="leading" secondItem="eCs-0L-3Lr" secondAttribute="trailing" constant="15" id="OjI-ez-9bi"/>
+                        <constraint firstAttribute="centerY" secondItem="eCs-0L-3Lr" secondAttribute="centerY" id="TCZ-Rv-j31"/>
+                        <constraint firstAttribute="trailing" secondItem="sj7-Sc-ZsM" secondAttribute="trailing" constant="10" id="UQq-wp-cZZ"/>
+                        <constraint firstAttribute="bottom" secondItem="sj7-Sc-ZsM" secondAttribute="bottom" constant="20" id="Wnz-np-ud8"/>
+                        <constraint firstItem="eCs-0L-3Lr" firstAttribute="leading" secondItem="OSP-0S-5qN" secondAttribute="leading" constant="10" id="oy4-8o-i6R"/>
+                        <constraint firstAttribute="centerY" secondItem="sj7-Sc-ZsM" secondAttribute="centerY" id="pZg-IF-0Z2"/>
+                        <constraint firstItem="sj7-Sc-ZsM" firstAttribute="top" secondItem="OSP-0S-5qN" secondAttribute="top" constant="20" id="xJh-lk-Bf7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="OSP-0S-5qN" secondAttribute="centerY" id="4x7-Yk-3mD"/>
+                <constraint firstAttribute="trailing" secondItem="OGK-me-VGk" secondAttribute="trailing" id="5pS-QB-nOl"/>
+                <constraint firstAttribute="bottom" secondItem="OGK-me-VGk" secondAttribute="bottom" id="Nue-lS-2aB"/>
+                <constraint firstAttribute="centerX" secondItem="OSP-0S-5qN" secondAttribute="centerX" id="XSa-c2-e0o"/>
+                <constraint firstItem="OGK-me-VGk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bla-19-7mK"/>
+                <constraint firstItem="OGK-me-VGk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="os9-4x-1hW"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22"
+
+    defaultConfig {
+        applicationId "com.parse.anydevice"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "PARSE_APP_ID", "\"YOUR_APPLICATION_ID\""
+        buildConfigField "String", "PARSE_CLIENT_KEY", "\"YOUR_PARSE_CLIENT_KEY\""
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("debug_keystore.jks")
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:recyclerview-v7:22.0.+'
+    compile "com.android.support:support-v4:22.0.+"
+    compile "com.android.support:appcompat-v7:22.0.+"
+
+    compile 'com.parse.bolts:bolts-android:1.1.4'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+}

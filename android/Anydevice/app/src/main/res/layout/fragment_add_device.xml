@@ -1,0 +1,81 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.UnregisteredDevicesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/fab_vertical_margin"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="@dimen/fab_vertical_margin">
+
+        <EditText
+            android:id="@+id/add_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/hint_device_name"
+            android:inputType="textNoSuggestions|textCapWords"/>
+
+        <EditText
+            android:id="@+id/network_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_device_name"
+            android:layout_marginTop="12dp"
+            android:hint="@string/hint_network_ssid"
+            android:inputType="textNoSuggestions"/>
+
+        <Spinner
+            android:id="@+id/network_security"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/network_ssid"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="-4dp"
+            android:entries="@array/network_security_array"
+            android:prompt="@string/network_security"/>
+
+        <EditText
+            android:id="@+id/network_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/network_security"
+            android:layout_marginTop="12dp"
+            android:hint="@string/hint_network_password"
+            android:inputType="textPassword"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/save_infra_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/network_password"
+            android:layout_marginTop="12dp"
+            android:text="@string/save_infra_key"/>
+
+        <Button
+            android:id="@+id/add"
+            style="@style/FlatButton.Impl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/save_infra_key"
+            android:enabled="false"
+            android:text="@string/add_device"/>
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/FlatButton.Impl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/save_infra_key"
+            android:layout_toLeftOf="@id/add"
+            android:text="@string/cancel"/>
+
+    </RelativeLayout>
+</ScrollView>

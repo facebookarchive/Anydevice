@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PADPickerAccessoryView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiB-wt-dZL" userLabel="separatorView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jcV-Vb-WUc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlQ-7j-Yjl" userLabel="pickerButton">
+                    <rect key="frame" x="250" y="0.0" width="70" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="G2c-Vd-ra0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" red="0.28235295414924622" green="0.32941177487373352" blue="0.37254902720451355" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pickerButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="kMo-aH-msV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="JiB-wt-dZL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E9W-AP-MPg"/>
+                <constraint firstAttribute="trailing" secondItem="dlQ-7j-Yjl" secondAttribute="trailing" id="KoL-J3-wc1"/>
+                <constraint firstAttribute="trailing" secondItem="JiB-wt-dZL" secondAttribute="trailing" id="Xhr-bt-DBC"/>
+                <constraint firstItem="JiB-wt-dZL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bRR-6l-4C8"/>
+                <constraint firstItem="dlQ-7j-Yjl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bhT-td-nQv"/>
+                <constraint firstAttribute="bottom" secondItem="dlQ-7j-Yjl" secondAttribute="bottom" id="uNw-be-o3F"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pickerButton" destination="dlQ-7j-Yjl" id="7lv-o6-TJ7"/>
+            </connections>
+            <point key="canvasLocation" x="-238" y="-100"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/DeviceList.Empty.ProgressBar.Impl"
+        android:layout_above="@+id/empty_list_primary"/>
+
+    <TextView
+        android:id="@+id/empty_list_primary"
+        style="@style/DeviceList.Empty.Text.Primary.Impl"/>
+
+    <com.parse.anydevice.views.InnerDrawableTextView
+        android:id="@+id/empty_list_secondary"
+        style="@style/DeviceList.Empty.Text.Secondary.Impl"
+        android:layout_below="@+id/empty_list_primary"
+        app:drawable="@drawable/inline_add"/>
+
+</merge>

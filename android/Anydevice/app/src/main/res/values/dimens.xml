@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_horizontal_margin">12dp</dimen>
+    <dimen name="fab_vertical_margin">15dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_elevation">4dp</dimen>
+
+    <dimen name="device_list_image_size">64dp</dimen>
+
+    <dimen name="device_details_image_size">133dp</dimen>
+</resources>
