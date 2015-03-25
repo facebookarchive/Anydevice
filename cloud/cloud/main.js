@@ -7,7 +7,8 @@
 // https://www.parse.com/docs/cloud_code_guide#functions-onsave
 //
 // Please use JS SDK v1.4.0 or later (for Parse.Session APIs). You specify this
-// in your Cloud Code folder's config/global.json's global.parseVersion field.
+// by calling "parse jssdk 1.4.0" from your Cloud Code CLI. Alternatively, you 
+// can also edit your Cloud Code config/global.json's global.parseVersion field.
 
 // When the device saves an Event object, this method finds the installations
 // of the current user's phones and sends a push to each phone.
