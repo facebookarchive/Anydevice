@@ -5,6 +5,10 @@
 //
 // To learn more about Cloud Code afterSave handlers, see
 // https://www.parse.com/docs/cloud_code_guide#functions-onsave
+//
+// Please use JS SDK v1.4.0 or later (for Parse.Session APIs). You specify this
+// by calling "parse jssdk 1.4.0" from your Cloud Code CLI. Alternatively, you 
+// can also edit your Cloud Code config/global.json's global.parseVersion field.
 
 // When the device saves an Event object, this method finds the installations
 // of the current user's phones and sends a push to each phone.
@@ -37,8 +41,7 @@ Parse.Cloud.afterSave("Event", function(request, response) {
           }
         });
 
-        var UserSession = Parse.Object.extend("_Session");
-        var query = new Parse.Query(UserSession);
+        var query = new Parse.Query(Parse.Session);
 
         // Cloud Code automatically populates the request object with the user that
         // saved the Event (authenticated by the session token from that device).
@@ -49,7 +52,7 @@ Parse.Cloud.afterSave("Event", function(request, response) {
         // object ID in the push notification to the phone.
         query.first({
           success: function(sessionObject) {
-            var sessionQuery = new Parse.Query(UserSession);
+            var sessionQuery = new Parse.Query(Parse.Session);
             sessionQuery.equalTo("user", request.user);
 
             var query = new Parse.Query(Parse.Installation);
@@ -102,12 +105,12 @@ Parse.Cloud.afterSave("Event", function(request, response) {
                       console.log("Error: " + error.code + " " + error.message);
                     }
                   });
-                  
+
           },
           error: function(err) {
             console.error(err);
           }
-        }) 
+        })
       },
       error: function(err) {
         console.error(err);
@@ -125,8 +128,8 @@ Parse.Cloud.afterSave("Message", function(request, response) {
     query.equalTo("installationId", installationId);
   } else {
     return;
-  }  
-  
+  }
+
   Parse.Push.send({
     where: query,
     data: request.object.get("value"),
