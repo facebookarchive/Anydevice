@@ -30,9 +30,11 @@ Anydevice requires Xcode 6 and iOS 8.
 
 #### Setting up your Xcode project
 
-1. Open the Xcode workspace at `Anydevice.xcworkspace`.
+1. Install dependencies via `Cocoapods` by running `pod install` in the `ios` directory.
 
-2. Copy your new Parse Application ID and Client Key into `PADConstants.m`.
+2. Open the Xcode workspace at `Anydevice.xcworkspace`.
+
+3. Copy your new Parse Application ID and Client Key into `PADConstants.m`.
 
   ```objective-c
   NSString * const PADApplicationId = @"YOUR_APPLICATION_ID";
